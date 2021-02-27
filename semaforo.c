@@ -24,18 +24,18 @@ void init_semaforo(void)
     PORTDbits.RD5 = 0;
 }
 
-void vermelho(int estado)
+void vermelho(int x)
 {
-    VERMELHO = estado;
+    VERMELHO = x;
 }
 
-void amarelo(int estado)
+void amarelo(int x)
 {
-    AMARELO = estado;
+    AMARELO = x;
 }
 
-void verde(int estado)
+void verde(int x)
 {
-    VERDE = estado;
+    VERDE = x;
 }
 

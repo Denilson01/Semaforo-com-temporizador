@@ -2,9 +2,8 @@
 #define SEMAFORO_H
 
 void init_semaforo(void);
-void vermelho(int estado);
-void amarelo(int estado);
-void verde(int estado);
-
+void vermelho(int x);
+void amarelo(int x);
+void verde(int x);
 
 #endif
