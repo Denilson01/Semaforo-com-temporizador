@@ -15,6 +15,8 @@ void main(void)
 {
     int bloco = 0;
     int cont = 0;
+    init_semaforo();
+    init_display7seg();
    
     while(1)
     {
@@ -43,7 +45,7 @@ void main(void)
                 amarelo(0);
                 vermelho(1);
                 delay(1000);
-                bloco = 1;
+                bloco = 0;
                 break;
                 
                 
