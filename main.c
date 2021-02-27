@@ -13,14 +13,47 @@
 
 void main(void)
 {
+    int bloco = 0;
     int cont = 0;
-    init_display7seg();
-    
+   
     while(1)
     {
-        display(cont);
-        delay(1000);
-        if(cont >= 15)
-            cont = 0;
+        switch(bloco)
+        {
+            case 0:
+                verde(1);
+                amarelo(0);
+                vermelho(0);
+                delay(1000);
+                bloco = 1;
+                break;
+                
+                
+            case 1:
+                verde(0);
+                amarelo(1);
+                vermelho(0);
+                delay(1000);
+                bloco = 2;                
+                break;
+                
+                
+            case 2:
+                verde(0);
+                amarelo(0);
+                vermelho(1);
+                delay(1000);
+                bloco = 1;
+                break;
+                
+                
+            case 3:
+                
+                break;
+        
+        
+        
+        
+        }
     }
 }
