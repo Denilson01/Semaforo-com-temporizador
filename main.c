@@ -26,31 +26,50 @@ void main(void)
                 verde(1);
                 amarelo(0);
                 vermelho(0);
-                delay(1000);
+                cont = 9;
                 bloco = 1;
                 break;
                 
-                
-            case 1:
-                verde(0);
-                amarelo(1);
-                vermelho(0);
+            case 1:                
+                display(cont);
                 delay(1000);
-                bloco = 2;                
+                --cont;
+                if(cont < 0)
+                bloco = 2;                   
                 break;
                 
                 
             case 2:
                 verde(0);
-                amarelo(0);
-                vermelho(1);
-                delay(1000);
-                bloco = 0;
+                amarelo(1);
+                vermelho(0);
+                delay(2000); 
+                cont = 9;
+                bloco = 4;                
                 break;
                 
-                
-            case 3:
-                
+            case 3: // contagem regressiva opcional
+                display(cont); 
+                delay(1000);
+                --cont;
+                if(cont < 0)
+                 bloco = 4;                
+                break;
+                               
+            case 4:
+                verde(0);
+                amarelo(0);
+                vermelho(1);               
+                cont = 9;
+                bloco = 5;
+                break;
+                                
+            case 5:
+                display(cont);
+                delay(1000);
+                --cont;
+                if(cont < 0)
+                bloco = 0;                 
                 break;
         
         
